@@ -8,6 +8,7 @@ You can import it into Postman application
 ## Requirements
 - PHP >= 8
 - Composer
+- pnpm
 
 ## Installation
 
@@ -32,4 +33,14 @@ php ./back/src/cli.php estates
 #### Get list of offices
 ```bash
 php ./back/src/cli.php offices
+```
+
+### Start api (back)
+```bash
+php -S localhost:1234 -t back/src/web
+```
+
+### Start vite (front)
+```bash
+pnpm run dev
 ```
